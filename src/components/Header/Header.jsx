@@ -5,6 +5,7 @@ const Header = () => {
 	return (
 		<header className={styles.header}>
 			<h1 className={styles.title}>React News</h1>
+			<h5>Simach ProducшеN</h5>
 			<p className={styles.date}>{formatDate(new Date())}</p>
 		</header>
 	);
