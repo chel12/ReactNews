@@ -5,8 +5,10 @@ const Categories = ({
 	setSelectedCategory,
 	selectedCategories,
 }) => {
+	
+
 	return (
-		<div className={styles.categories}>
+		<div className={styles.categories} >
 			<button
 				onClick={() => setSelectedCategory(null)}
 				className={!selectedCategories ? styles.active : styles.item}>
