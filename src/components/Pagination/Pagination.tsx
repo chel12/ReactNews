@@ -7,9 +7,13 @@ const Pagination = ({
 	handlePreviousPage,
 	handlePageClick,
 	currentPage,
+	isDark,
 }: IPaginationProps) => {
 	return (
-		<div className={styles.pagination}>
+		<div
+			className={`${styles.pagination} ${
+				isDark ? styles.dark : styles.light
+			}`}>
 			<button
 				disabled={currentPage <= 1}
 				onClick={handlePreviousPage}
