@@ -1,4 +1,4 @@
-export const formatTimeAgo = (dateString) => {
+export const formatTimeAgo = (dateString: string) => {
 	//тек дата
 	const now = new Date();
 	//дата поста
