@@ -14,9 +14,9 @@ const PaginationWrapper = ({
 }: Props & IPaginationProps) => {
 	return (
 		<>
-			{top && <Pagination {...paginationsProps} />}
+			{top && <Pagination  {...paginationsProps} />}
 			{children}
-			{bottom && <Pagination {...paginationsProps} />}
+			{bottom && <Pagination  {...paginationsProps} />}
 		</>
 	);
 };
