@@ -10,14 +10,13 @@ const PaginationWrapper = ({
 	top,
 	bottom,
 	children,
-	isDark,
 	...paginationsProps
 }: Props & IPaginationProps) => {
 	return (
 		<>
-			{top && <Pagination isDark={isDark} {...paginationsProps} />}
+			{top && <Pagination  {...paginationsProps} />}
 			{children}
-			{bottom && <Pagination isDark={isDark} {...paginationsProps} />}
+			{bottom && <Pagination  {...paginationsProps} />}
 		</>
 	);
 };

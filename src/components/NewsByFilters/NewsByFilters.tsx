@@ -9,11 +9,7 @@ import { getNews } from '../../api/apiNews';
 import PaginationWrapper from '../PaginationWrapper/PaginationWrapper';
 import { NewsApiResponse, ParamsType } from '../../interfaces';
 
-interface Props {
-	isDark: boolean;
-}
-
-const NewsByFilters = ({ isDark }: Props) => {
+const NewsByFilters = () => {
 	const { filters, changeFilter } = useFilters({
 		page_number: 1,
 		page_size: PAGE_SIZE,
@@ -44,10 +40,8 @@ const NewsByFilters = ({ isDark }: Props) => {
 
 	return (
 		<section className={styles.section}>
-			<NewsFilters filters={filters} changeFilter={changeFilter} />
-
+			<NewsFilters  filters={filters} changeFilter={changeFilter} />
 			<PaginationWrapper
-				isDark={isDark}
 				top
 				bottom
 				handleNextPage={handleNextPage}
